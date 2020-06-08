@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,11 @@
 		AAED13B1248E8FC100DACF42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED13B0248E8FC100DACF42 /* ViewController.swift */; };
 		AAED13B3248E8FC200DACF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAED13B2248E8FC200DACF42 /* Assets.xcassets */; };
 		AAED13B6248E8FC200DACF42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAED13B4248E8FC200DACF42 /* Main.storyboard */; };
+		B0BB45C58D5DC9AFD899167D /* Pods_VibeMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B248730B90E5EBCF1D6DBEA5 /* Pods_VibeMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114FAD1E432D7D64594CD077 /* Pods-VibeMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeMusic.release.xcconfig"; path = "Target Support Files/Pods-VibeMusic/Pods-VibeMusic.release.xcconfig"; sourceTree = "<group>"; };
 		AAED13AB248E8FC100DACF42 /* VibeMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAED13AE248E8FC100DACF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAED13B0248E8FC100DACF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +23,8 @@
 		AAED13B5248E8FC200DACF42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAED13B7248E8FC200DACF42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAED13B8248E8FC200DACF42 /* VibeMusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VibeMusic.entitlements; sourceTree = "<group>"; };
+		B248730B90E5EBCF1D6DBEA5 /* Pods_VibeMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibeMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA35AC000046C68781E9D640 /* Pods-VibeMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeMusic.debug.xcconfig"; path = "Target Support Files/Pods-VibeMusic/Pods-VibeMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BB45C58D5DC9AFD899167D /* Pods_VibeMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C82D57065E3C3F479D510C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B248730B90E5EBCF1D6DBEA5 /* Pods_VibeMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D4C868EF9C49FB54EE1249 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA35AC000046C68781E9D640 /* Pods-VibeMusic.debug.xcconfig */,
+				114FAD1E432D7D64594CD077 /* Pods-VibeMusic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AAED13A2248E8FC100DACF42 = {
 			isa = PBXGroup;
 			children = (
 				AAED13AD248E8FC100DACF42 /* VibeMusic */,
 				AAED13AC248E8FC100DACF42 /* Products */,
+				83D4C868EF9C49FB54EE1249 /* Pods */,
+				5C82D57065E3C3F479D510C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAED13BB248E8FC200DACF42 /* Build configuration list for PBXNativeTarget "VibeMusic" */;
 			buildPhases = (
+				6D55ABCAB775FBB90DE260BB /* [CP] Check Pods Manifest.lock */,
 				AAED13A7248E8FC100DACF42 /* Sources */,
 				AAED13A8248E8FC100DACF42 /* Frameworks */,
 				AAED13A9248E8FC100DACF42 /* Resources */,
+				2154434D418AF504E14D97C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +153,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2154434D418AF504E14D97C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VibeMusic/Pods-VibeMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VibeMusic/Pods-VibeMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VibeMusic/Pods-VibeMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D55ABCAB775FBB90DE260BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VibeMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAED13A7248E8FC100DACF42 /* Sources */ = {
@@ -267,9 +335,11 @@
 		};
 		AAED13BC248E8FC200DACF42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA35AC000046C68781E9D640 /* Pods-VibeMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VibeMusic/VibeMusic.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZW2MC5SS4Z;
@@ -287,9 +357,11 @@
 		};
 		AAED13BD248E8FC200DACF42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114FAD1E432D7D64594CD077 /* Pods-VibeMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VibeMusic/VibeMusic.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZW2MC5SS4Z;
