@@ -1,0 +1,16 @@
+PODS:
+  - MediaKeyTap (2.2.1)
+
+DEPENDENCIES:
+  - MediaKeyTap
+
+SPEC REPOS:
+  trunk:
+    - MediaKeyTap
+
+SPEC CHECKSUMS:
+  MediaKeyTap: 737434cc2459e5fb9385f7e8974939ee833cd8ec
+
+PODFILE CHECKSUM: b6d7891447515b522a476c7645a3c8719aa2d8b2
+
+COCOAPODS: 1.9.1

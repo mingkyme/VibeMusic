@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0DE4132491F42300B57B60 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE4122491F42300B57B60 /* MainWindowController.swift */; };
 		AAED13AF248E8FC100DACF42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED13AE248E8FC100DACF42 /* AppDelegate.swift */; };
 		AAED13B1248E8FC100DACF42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED13B0248E8FC100DACF42 /* ViewController.swift */; };
 		AAED13B3248E8FC200DACF42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAED13B2248E8FC200DACF42 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		114FAD1E432D7D64594CD077 /* Pods-VibeMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeMusic.release.xcconfig"; path = "Target Support Files/Pods-VibeMusic/Pods-VibeMusic.release.xcconfig"; sourceTree = "<group>"; };
+		AA0DE4122491F42300B57B60 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		AAED13AB248E8FC100DACF42 /* VibeMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAED13AE248E8FC100DACF42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAED13B0248E8FC100DACF42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				AAED13B4248E8FC200DACF42 /* Main.storyboard */,
 				AAED13B7248E8FC200DACF42 /* Info.plist */,
 				AAED13B8248E8FC200DACF42 /* VibeMusic.entitlements */,
+				AA0DE4122491F42300B57B60 /* MainWindowController.swift */,
 			);
 			path = VibeMusic;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				AAED13B1248E8FC100DACF42 /* ViewController.swift in Sources */,
 				AAED13AF248E8FC100DACF42 /* AppDelegate.swift in Sources */,
+				AA0DE4132491F42300B57B60 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +353,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = Mingky.me.VibeMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -371,6 +376,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = Mingky.me.VibeMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
